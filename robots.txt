@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /
+Allow: /index.html
+Allow: /publication.html
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
