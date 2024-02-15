@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fafafa;
+    color: #2e2e2e;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    /* overflow: hidden; */
+    font-size: 16px;
+}
+
+jap_font{
+    font-size: 15px;
+    font-family:'Noto Sans Japanese', 'Open Sans';
+    color:#6a6969;
+    font-weight: 300;
+}
+
+section{
+    width: 100%;
+}
+
+.header-3{
+    font-size: 1.75em;
+    margin: 40px 0;
+    padding: 0 12px;
+    border-left: 5px solid #5985ad;
+}
+
+/* Nav style */
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    /* background-color: aqua; */
+    width: 50%;
+    margin: 0 auto;
+}
+.logo{
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #44576d;
+}
+.nav-item{
+    padding: 4px 0px;
+    text-decoration: none;
+    font-size: 1.125em;
+    transition: all 600ms;
+    color: #2e2e2e;
+    margin: 0 12px;
+}
+.nav-item:hover{
+    border-bottom: 2px solid #2e2e2e ;
+}
+
+.nav-item:current{
+    border-bottom: 2px solid #2e2e2e ;
+}
+
+/* Footer */
+.footer-container {
+  width: 100%;
+  background-color: #a1abb6;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4vh;
+  background-color: #a1abb6;
+  bottom: 0;
+  color: #fff;
+}
+
+/* About me  */
+.about-container, .publication-container, .work-container{
+    margin: 2% 0 6% 0;
+}
+.about-container{
+    margin-bottom: 12%;
+}
+.about-header {
+  margin-top: 0;
+}
+.about-content-wrap{
+    display: flex;
+    width: 45%;
+    margin: 0 auto;
+}
+.about-img-wrap{
+    width: 45%;
+    height: 50vh;
+    background: url(../img/d9f8d6s93j.png) no-repeat top;
+    margin: 0 0 0 0;
+    padding: 50px;
+}
+.about-text-wrap{
+    width: 45%;
+    padding: 12px;
+}
+.about-me-info{
+    font-size: 1.125em;
+}
+
+/* Publication section */
+.publication-wrap {
+    width: 45%;
+    margin: 0 auto;
+}
+.other-publication-header {
+  margin-bottom: 24px;
+}
+.direct-scholar {
+    margin-bottom: 36px;
+}
+.direct-scholar a {
+    text-decoration: none;
+    color:#5985ad;
+}
+.direct-scholar a:hover {
+    text-decoration: underline;
+    color:#5985ad;
+}
+.publication-item{
+    margin: 0 0 24px 0;
+}
+.publication-title{
+    font-size: 16px;
+    color: #5a5a5a;
+}
+.publication-title a {
+    text-decoration: none;
+    color:#5985ad;
+}
+.publication-title a:hover {
+    border-bottom: 2px solid #5985ad;
+    color:#5985ad;
+}
+.author{
+    font-size: 16px;
+    color: #2e2e2e;
+}
+.resource{
+    font-size: 14px;
+    color: #818181;
+}
+
+/* Work Section */
+.work-container {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+#work .subcontent1{
+    display: table;
+    justify-content: space-between;
+    line-height: 1.5em;
+    margin: 24px 0;
+}
+#work .subcol1a{
+    float:left;
+}
+#work .subcol1b{
+    padding-left: 18px;
+    float:left;
+}
+
+#work .resource{
+    color: #818181;
+}
+
+#work table tr a{
+  text-decoration: none;
+  color: #5985ad;
+}
+#work table tr a:hover{
+  border-bottom: 2px solid #5985ad;
+  color: #5985ad;
+}
+#work table td{
+    vertical-align: top;
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media screen and (max-width: 1280px) and (min-width: 1025) {
+    .about-content-wrap, .publication-wrap, .work-container{
+        width: 70%;
+    }
+    .about-img-wrap, .about-text-wrap {
+        width: 48%;
+    }
+    .header-3{
+        margin: 0;
+    }
+    .direct-scholar, .uia-timeline{
+        margin-top: 30px;
+    }
+}
+/* Large devices such as laptops (1024px and down) */
+@media screen and (max-width: 1024px) and (min-width: 769px){
+    .about-content-wrap, .publication-wrap, .work-container{
+        width: 80%;
+    }
+    .about-img-wrap, .about-text-wrap {
+        width: 48%;
+        
+    }
+    .about-img-wrap {
+      height: 40vh;
+    }
+    .header-3{
+        margin: 0;
+    }
+    .direct-scholar, .uia-timeline{
+        margin-top: 30px;
+    }
+}
+/* Medium devices such as tablets (768px and up) */
+@media screen and (max-width: 768px) and (min-width: 641px) {
+    .about-content-wrap, .publication-wrap, .work-container{
+        width: 80%;
+    }
+    .about-img-wrap, .about-text-wrap {
+        width: 48%;
+    }
+    .about-img-wrap {
+      height: 400px;
+    }
+    .about-me-info {
+        font-size: 1em;
+    }
+    .header-3{
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+    .direct-scholar, .uia-timeline{
+        margin-top: 30px;
+    }
+}
+/* Small devices such as large phones (640px and up) */
+@media  screen and (max-width: 640px) {
+    .about-content-wrap, .publication-wrap, .work-container{
+        width: 80%;
+    }
+    .about-content-wrap {
+        flex-direction: column;
+    }
+    .about-img-wrap, .about-text-wrap {
+        width: auto;
+        margin: 0;
+    }
+    .about-me-info {
+        font-size: 1em;
+    }
+    .header-3{
+        margin: 0;
+    }
+    .direct-scholar, .uia-timeline{
+        margin-top: 30px;
+    }
+    .ra-heading {
+        font-size: 1em;
+    }
+    .uia-card__body{
+        font-size: 0.85em;
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .logo {
+    font-size: 1.5em;
+    font-weight: 700;
+  }  
+  .header-3 {
+    font-size: 1.25em;
+  }
+table td{
+  font-size: 0.95em;
+}
+  .nav-bar-container{
+        width: 100%;
+        padding: 40px 0;
+    }
+    .about-content-wrap, .publication-wrap, .work-container, .uia-timeline, .nav-bar{
+        width: 80%;
+    }
+    .about-img-wrap {
+      height: 400px;
+    }
+    .nav-item {
+      font-size: 0.85em;
+    }
+    .nav-bar {
+        padding: 0;
+    }
+    .about-content-wrap {
+        flex-direction: column;
+    }
+    .about-img-wrap, .about-text-wrap, .uia-timeline {
+        width: auto;
+        margin: 0;
+    }
+    .about-me-info {
+        font-size: 1em;
+    }
+    .header-3{
+        margin: 0;
+    }
+    .direct-scholar, .uia-timeline{
+        margin-top: 30px;
+    }
+    .ra-heading {
+        font-size: 1em;
+    }
+    .uia-card__body{
+        font-size: 0.85em;
+    }
+    .footer-text{
+      font-size: .85em;
+      width: 85%;
+      text-align: center;
+    }
+} 
