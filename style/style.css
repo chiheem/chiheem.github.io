@@ -82,6 +82,7 @@ section{
 }
 .about-container{
     margin-bottom: 12%;
+    min-height:800px;
 }
 .about-header {
   margin-top: 0;
@@ -90,10 +91,11 @@ section{
     display: flex;
     width: 90%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 .about-img-wrap{
     width: 25%;
-    height: 50vh;
+    height: 30vh;
     background: url(../img/d9f8d6s93j.png) no-repeat top;
     margin: 0 0 0 0;
     padding: 50px;
