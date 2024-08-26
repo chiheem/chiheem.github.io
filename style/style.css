@@ -150,6 +150,10 @@ section{
     font-size: 14px;
     color: #818181;
 }
+.project a {
+    font-size: 12px;
+    color: #44dfb9;
+}
 
 /* Work Section */
 .work-container {
