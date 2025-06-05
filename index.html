@@ -55,6 +55,43 @@
             and Computer Science from the Massachusetts Institute of Technology. My doctorate thesis was advised by
             Andrew W. Lo.</p>
         </div>
+
+        <!-- Announcement section -->
+        <div class="announcement-container">
+          <h3 class="header-3 announcement-header" style="border-left: 5px solid #59ad91;">Recent updates</h3>
+          
+          <div class="announcement-box">
+            <!--Item-->
+            <div class="announcement-item">
+              <div class="announcement-header">
+                <div class="announcement-content">
+                  <span><img src="https://marin.community/assets/images/logo.webp" alt="Marin logo" style="max-width: 15px;"><b> Marin launched!</b>
+                    <br>
+                    Stanford launched a fully open-sourced large language model: open data, open training hyperparameters, open weights!
+                    Join us on the <a href="https://marin.community/">Marin community</a> or read our <a href="https://marin.community/blog/2025/05/19/announcement">blog</a>.
+                  </span>
+                </div>
+                <span class="announcement-date">May 19, 2024</span>
+                <button class="collapse-btn">+</button>
+              </div>
+            </div>
+            <!--Item-->
+            <div class="announcement-item">
+              <div class="announcement-header">
+                <div class="announcement-content">
+                  <span>
+                    <img src="img/bell-plus.svg" alt="update-icon" style="max-width: 15px;"><b> [Update] VHELM v2.1.2</b>
+                    <br>
+                    The latest Gemini models, Qwen2.5-VL Instruct, GPT 4.5 Preview, o3, o4-mini, and Llama 4 Scout/Meverick have been added to VHELM leaderboard.
+                    Check out the latest <a href="https://crfm.stanford.edu/helm/vhelm/v2.1.2/">results</a>! 
+                  </span>
+                </div>
+                <span class="announcement-date">May 02, 2024</span>
+                <button class="collapse-btn">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -67,6 +104,21 @@
     </div>
   </section>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const announcementItems = document.querySelectorAll('.announcement-item');
+      
+      announcementItems.forEach(item => {
+        const header = item.querySelector('.announcement-header');
+        const btn = item.querySelector('.collapse-btn');
+        
+        header.addEventListener('click', () => {
+          item.classList.toggle('active');
+          btn.textContent = item.classList.contains('active') ? '−' : '+';
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
